@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Node
+metadata:
+  name: minikube-m02
+spec:
+  taints:
+    - key: dedicated
+      value: nginx
+      effect: NoSchedule
